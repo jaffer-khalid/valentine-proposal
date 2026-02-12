@@ -1,8 +1,21 @@
 const yesBtn = document.getElementById('yesBtn');
 const noBtn = document.getElementById('noBtn');
 const message = document.getElementById('message');
+const gif = document.getElementById('gif');
 
 let noclickcount = 0;
+
+const gifsrc = ["20260211_185448.gif",
+    "tkthao219-peach.gif",
+    "output-onlinegiftools (3).gif",
+    "e97aab507efba22ab7bec84e2bc72ffd.gif",
+    "output-onlinegiftools.gif",
+    "output-onlinegiftools (2).gif",
+    "20260212_120149.gif",
+    "mochicat-king.gif",
+    "ezgif.com-animated-gif-maker (1).gif",
+    "20260211_185223.gif"
+ ];
 
 const messages = ["I think your hand slipped. Try again 😁",
     "I think your aim is a bit off 😅",
