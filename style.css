@@ -1,0 +1,88 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(53b2ed628044f9e037b79e7f48be9ecc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+    margin: 0;
+    
+}
+.OuterContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    max-width: 700px;
+    max-height: 700px;
+    background: linear-gradient(135deg ,#ff9a9e 50%,#fad0c4 100%);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.container h1{
+    font-size: 49px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(246, 223, 223);
+    border-radius: 50px;
+    padding: 10px;
+    color: #ff6b6b;
+    transition: all 0.3s ease;
+}
+
+.BtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.BtnContainer button {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6b6b;
+    transition: all 0.3s ease;
+
+}
+
+.BtnContainer button:hover {
+    transform: scale(1.1);
+}
+
+#noBtn {
+    
+}
+
