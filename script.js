@@ -4,15 +4,15 @@ const message = document.getElementById('message');
 
 let noclickcount = 0;
 
-const messages = ["I think your hand slipped, but it's okay. Try again 😁",
+const messages = ["I think your hand slipped. Try again 😁",
     "I think your aim is a bit off 😅",
     "Really?! Three times in a row? ☹️",
-    "Come on... don't break my heart like this 🥺",
+    "Don't break my heart like this 🥺",
     "Wow! Wow! So that's how it is? 😮",
-    "I stayed up coding this for you... 😞",
+    "I stayed up coding this for you...😞",
     "This is getting personal now 😒",
-    "The 'Yes' button is literally right there 🙄",
-    "Are you testing my emotional stability? 🤨",
+    "Yes' is literally right there 🙄",
+    "Testing my emotional stability? 🤨",
     "Fine! I'll just wait here... 🙎‍♂️"
 ];
 
