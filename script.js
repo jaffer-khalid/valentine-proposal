@@ -6,7 +6,7 @@ const gif = document.getElementById('gif');
 const romanticMusic = new Audio("George Michael - Careless Whisper.mp3");
 romanticMusic.loop = true;
 
-let noclickcount = 1;
+let noclickcount = 0;
 
 let yesSize = 100;
 let noSize = 100;
@@ -71,19 +71,19 @@ noBtn.addEventListener('click', () => {
 
     if (noclickcount <= steps.length) {
         if (noclickcount < steps.length) {
-            message.textContent = steps[noclickcount - 1].message;
-            gif.src = steps[noclickcount - 1].gif;
+            message.textContent = steps[noclickcount].message;
+            gif.src = steps[noclickcount].gif;
             noclickcount++;
 
-            yesSize += 7;
-            yesFontSize += 3;
+            yesSize += 5;
+            yesFontSize += 2;
             yesBtn.style.width = yesSize + "px";
             yesBtn.style.height = yesSize + "px";
 
             yesBtn.style.fontSize = yesFontSize + "px";
 
 
-            noSize -= 7;
+            noSize -= 6;
             noFontSize -= 3;
             noBtn.style.width = noSize + "px";
             noBtn.style.height = noSize + "px";
