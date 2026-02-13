@@ -84,12 +84,13 @@ noBtn.addEventListener('click', () => {
         if (noclickcount < steps.length) {
             message.textContent = steps[noclickcount].message;
             gif.src = steps[noclickcount].gif;
-            steps[noclickcount - n].sound.pause();
+            steps[noclickcount - n].sound.pause(); // for audio not to overlap
             steps[noclickcount].sound.currentTime = 0;
             steps[noclickcount].sound.play();
 
             noclickcount++;
-            if (noclickcount >= 1) {
+
+            if (noclickcount >= 1) { // for audio not to overlap
                 n = 1;
             }
 
@@ -127,7 +128,7 @@ yesBtn.addEventListener('click', () => {
     gif.src = "729012a6c4988e66e46664870b94dd15.gif";
     yesBtn.style.transform = "scale(1.16)";
     document.body.style.animation = "flash 0.2s alternate 10";
-    steps[noclickcount - n].sound.pause();
+    steps[noclickcount - n].sound.pause(); // for audio not to overlap
     romanticMusic.play();
 
 });
