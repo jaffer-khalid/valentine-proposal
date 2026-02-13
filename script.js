@@ -38,7 +38,7 @@ const steps = [
     },
 
     {
-        message: "I stayed up coding this for you...😞",
+        message: "I stayed up coding this for you 😞",
         gif: "output-onlinegiftools (2).gif"
     },
 
