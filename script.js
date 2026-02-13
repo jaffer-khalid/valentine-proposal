@@ -5,6 +5,12 @@ const gif = document.getElementById('gif');
 
 let noclickcount = 1;
 
+let yesSize = 100;
+let noSize = 100;
+
+let yesFontSize = 35;
+let noFontSize = 35;
+
 const steps = [
     {
         message: "I think your hand slipped. Try again 😁",
@@ -66,17 +72,20 @@ noBtn.addEventListener('click', () => {
             gif.src = steps[noclickcount - 1].gif;
             noclickcount++;
 
-            yesSize += 15;
-            toString(yesSize);
+            yesSize += 7;
+            yesFontSize += 3;
             yesBtn.style.width = yesSize + "px";
             yesBtn.style.height = yesSize + "px";
-            yesSize = parseInt(yesSize);
 
-            noSize -= 8;
-            toString(noSize);
+            yesBtn.style.fontSize = yesFontSize + "px";
+
+
+            noSize -= 7;
+            noFontSize -= 3;
             noBtn.style.width = noSize + "px";
             noBtn.style.height = noSize + "px";
-            noSize = parseInt(noSize);
+
+            noBtn.style.fontSize = noFontSize + "px";
         }
 
 
@@ -93,5 +102,6 @@ yesBtn.addEventListener('click', () => {
     message.textContent = "🎉 YAY! Happy Valentine! 🎉";
     noBtn.style.display = "none";
     gif.src = "729012a6c4988e66e46664870b94dd15.gif";
-    yesBtn.style.scale = "1.5";
+    yesBtn.style.transform = "scale(1.16)";
+
 });
