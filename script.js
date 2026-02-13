@@ -102,7 +102,7 @@ noBtn.addEventListener('click', () => {
 });
 
 yesBtn.addEventListener('click', () => {
-    message.textContent = "🎉 YAY! YOU SAID YES! 😁 🎉";
+    message.textContent = "🎉 Ooh! You said yes? Good girl 😏 🎉";
     noBtn.style.display = "none";
     gif.src = "729012a6c4988e66e46664870b94dd15.gif";
     yesBtn.style.transform = "scale(1.16)";
