@@ -97,4 +97,7 @@ body {
     transform: scale(1.1);
 }
 
-#noBtn {}
+@keyframes flash {
+    0% {filter: brightness(1);}
+    100% {filter: brightness(2);}
+}
